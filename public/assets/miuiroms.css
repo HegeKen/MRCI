@@ -1,0 +1,79 @@
+body {
+    font-family: "MISans";
+    /* filter: grayscale(); */
+}
+.mdui-color-deep-orange-accent{
+    background-color: #FE7700!important;
+}
+a {
+    text-decoration: none;
+    color:#FE7700;
+}
+.mdui-col{
+    width: 120px!important;
+    height: 270px !important;
+}
+.name{
+    padding-top: 5px;
+}
+.mdui-bottom-nav-active{
+    color:black !important;
+}
+.mdui-tab-active {
+    color:white !important;
+}
+a.mdt{
+    color: black !important;
+}
+#id {
+    width:280px;
+    margin-left: 10px;
+}
+.fic {
+    font-family: "iconfont";
+    text-align: right;
+}
+
+.fic label {
+    text-decoration: none;
+    text-align: center;
+}
+.tce{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.timer{
+    z-index: -1;
+}
+.ff{
+    margin-bottom: 36px;
+    padding-top: 5px;
+}
+
+.fs{
+    padding-top: 5px;
+    margin-bottom: -25px;
+}
+
+.ffm{
+    margin-bottom: 60px;
+}
+
+.fsm{
+    padding-top: 5px;
+}
+.ftm{
+    padding-top: 5px;
+    margin-bottom: -30px;
+}
+
+.tri{
+    margin-top: -7px;
+}
+.mdui-list-item{
+    padding-left: calc(15%);
+}
