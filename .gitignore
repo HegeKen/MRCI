@@ -127,3 +127,4 @@ nb-configuration.xml
 
 /app/Config/Database.php
 /node_modules
+app/Config/Database.php
