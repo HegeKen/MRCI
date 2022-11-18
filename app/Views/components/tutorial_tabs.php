@@ -4,7 +4,11 @@
       <div class="pc"><span class="mdui-typo-title"><?php echo lang('app.st'); ?></span></div>
       <div class="mobile mdui-hidden"><a href="javascript:;" class="mdui-btn mdui-btn-icon tri" mdui-drawer="{target:'#main-drawer', swipe: true}"><i class="mdui-icon material-icons">menu</i></a><span class="mdui-typo-title"><?php echo lang('app.st'); ?></span></div>
       <div class="mdui-toolbar-spacer"></div>
-      <img id="logo" src="https://miuiroms-1251747223.cos.ap-shanghai.myqcloud.com/images/logo/Logo-Full-White.png" width="200px;" style="margin: 20px;"></div>
+      <img src="https://miuiroms-1251747223.cos.ap-shanghai.myqcloud.com/images/logo/Logo-Str-White.png" width="170px">
+      <a class="mdui-text-capitalize lang mdui-hidden" mdui-menu="{target: '#lang'}"><label><?php echo lang('app.cl'); ?>：<i class="mdui-icon material-icons">translate</i></label></a>
+      <ul class="mdui-menu" id="lang">
+          <li class="mdui-menu-item"><a href="<?php echo base_url();?>/zh-cn/" class="mdui-ripple">中文</a></li>
+          <li class="mdui-menu-item"><a href="<?php echo base_url();?>/en-us/" class="mdui-ripple">English</a></li></ul></div>
     <div class="pc mdui-tab mdui-tab-centered">
       <a href="<?php echo base_url($locale);?>/" class="mdui-ripple mdui-text-capitalize"><i class="mdui-icon material-icons">home</i><label><?php echo lang('app.hp'); ?></label></a>
       <a href="<?php echo base_url($locale);?>/tutorial/" class="mdui-ripple mdui-tab-active mdui-text-capitalize"><i class="mdui-icon material-icons">adb</i><label><?php echo lang('app.tt'); ?></label></a>
@@ -29,7 +33,11 @@
           <a href="<?php echo base_url($locale);?>/sitelog"><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons">update</i><div class="mdui-list-item-content"><?php echo lang('app.sl'); ?></div></li></a>
           <a href="<?php echo base_url($locale);?>/friendly"><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons">folder_special</i><div class="mdui-list-item-content"><?php echo lang('app.fl'); ?></div></li></a>
           <a href="<?php echo base_url($locale);?>/about"><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons">perm_identity</i><div class="mdui-list-item-content"><?php echo lang('app.as'); ?></div></li></a>
+          <a class="mdui-text-capitalize" mdui-menu="{target: '#langmb'}"><li class="mdui-list-item"><i class="mdui-list-item-icon mdui-icon material-icons">translate</i><div class="mdui-list-item-content"><?php echo lang('app.cl'); ?></div></li>
+          <ul class="mdui-menu mdui-text-center" id="langmb">
+            <li class="mdui-menu-item"><a href="<?php echo base_url();?>/zh-cn/" class="mdui-ripple">中文</a></li>
+            <li class="mdui-menu-item"><a href="<?php echo base_url();?>/en-us/" class="mdui-ripple">English</a></li></ul></a>
         </ul>
       </div>
     </div>
-  </div>
+</div>

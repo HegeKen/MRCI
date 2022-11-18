@@ -30,7 +30,7 @@ return [
     'mgf' => 'MIUI Forum',
     'bilibili' => 'BiliBili',
     'tut' => 'Flashing Tutorial',
-    '' => '',
+    'cl' => '语言',
     '' => '',
     '' => '',
     '' => '',

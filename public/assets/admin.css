@@ -1,0 +1,10 @@
+body {
+    font-family: "MISans";
+    /* filter: grayscale(); */
+}
+.mdui-bottom-nav-active{
+    color:black !important;
+}
+.mdui-tab-active {
+    color:white !important;
+}

@@ -22,6 +22,9 @@ a {
 .mdui-tab-active {
     color:white !important;
 }
+img{
+    margin: 0px !important;
+}
 a.mdt{
     color: black !important;
 }
@@ -75,5 +78,16 @@ a.mdt{
     margin-top: -7px;
 }
 .mdui-list-item{
-    padding-left: calc(15%);
+    padding-left: 50px;
+}
+.mdui-panel-item{
+    padding-left: 30px;
+}
+.mdui-menu{
+    padding:0px;
+}
+
+.mdui-menu-item>a{
+    display: inline;
+    padding:0px;
 }

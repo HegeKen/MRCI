@@ -36,6 +36,7 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/.env', 'Login::index');
 $routes->get('{locale}/', 'Home::index');
 $routes->get('{locale}/tutorial', 'Home::tutorial');
 $routes->get('{locale}/weekly', 'Weekly::index');
@@ -49,7 +50,18 @@ $routes->get('{locale}/thanks', 'Home::thanks');
 $routes->get('{locale}/sitelog', 'Home::sitelog');
 $routes->get('{locale}/friendly', 'Home::friendly');
 $routes->get('{locale}/about', 'Home::about');
-$routes->get('/test', 'Test');
+
+$routes->match(['get','post'],'/admin/login', 'Login::index');
+$routes->match(['get','post'],'/admin/logout', 'Login::logout');
+$routes->match(['get','post'],'/admin/login/auth', 'Login::auth');
+$routes->match(['get','post'],'/admin/register', 'Register::index');
+$routes->match(['get','post'],'/admin/register/save', 'Register::save');
+$routes->get('/admin/dashboard', 'Dashboard::index',['filter' => 'auth']);
+$routes->get('/admin/dashboard/weekly', 'Dashboard::weekly');
+$routes->get('/admin/dashboard/devices', 'Dashboard::devices');
+$routes->get('/admin/dashboard/recovery', 'Dashboard::recovery');
+$routes->get('/admin/dashboard/tools', 'Dashboard::tools');
+$routes->get('/admin/dashboard/sitelog', 'Dashboard::sitelog');
 
 /*
  * --------------------------------------------------------------------
